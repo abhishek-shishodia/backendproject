@@ -1,16 +1,22 @@
-<html
+<html>
     <head>
         <title>
-                <%=title %>
+            <%= title  %>
         </title>
         <link rel="stylesheet" href="/css/layout.css">
-        <%-style %>
-     <!-- this whole is a wrapper to the body enclosed. -->
+        <%- style %>
+        
     </head>
+
     <body>
-        <%- include('_header'); -%>
-        <%- body %>                       
-        <%- include('_footer'); -%>
-        <%-script %>
+        <%- include('_header'); %>
+
+        <%- body %>
+
+
+        <%- include('_footer'); %>
+
+        <%- script %>
+        
     </body>
 </html>
