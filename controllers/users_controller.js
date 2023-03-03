@@ -61,7 +61,11 @@ module.exports.createSession = function(req, res){
 }
 
 module.exports.destroySession = function(req, res){
-    req.logout();
-
-    return res.redirect('/');
+    req.logout(function (err) {// due to changes in script of passport.js
+        if (err) {
+          return next(err);
+        }
+        res.redirect("/");
+      });
 }
+ 
