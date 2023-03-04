@@ -3,11 +3,9 @@
         display: flex;
         justify-content: space-between;
         padding: 0 10px;
-        // background: red;
-        background-color: aquamarine;
-        color: blue;
-        box-shadow: 1px 1px 1px 1px purple;
-        
+        background: #2196f3;
+        color: white;
+        box-shadow: 1px 1px 1px 1px lightgrey;
 
         .mini-logo{
             p{
@@ -21,18 +19,16 @@
             ul{
                 margin: 5% 5px;
                 display: flex;
-                
-
+                list-style: none;
                 li{
-                    
-                    margin-right: 20px;
+                    margin-right: 10px;
                 }
             }
         }
 
         a{
-            color:blue;
-            text-decoration:none;
+            color: white;
+            text-decoration: none;
         }
 
     }
